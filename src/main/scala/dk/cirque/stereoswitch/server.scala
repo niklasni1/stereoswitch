@@ -1,4 +1,4 @@
-package main.scala
+package dk.cirque.stereoswitch
 
 import akka.actor.ActorSystem
 import akka.actor.Props
