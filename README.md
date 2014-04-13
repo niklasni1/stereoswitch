@@ -5,8 +5,17 @@ StereoSwitch exposes a json/HTTP API for discovering and connecting inputs to ou
 
 The use-case is a web-controllable analogue audio switch: one out of a number of defined inputs go to one of a number of defined outputs. This requires hardware which at the moment only exists on the back of a napkin.
 
-JSON objects
+Run it with:
+
+    $ sbt run
+
+Usage
 ----
+
+The methods and JSON object formats are described below. Endpoints (inputs and outputs) are identified by a numerical id. This is the order in which they are returned by sending a GET to /connections.
+
+JSON objects
+====
 
 Two types of objects are used by the StereoSwitch API:
 
@@ -32,7 +41,7 @@ These are either inputs or outputs:
     }
 
 HTTP resources
-----
+====
 
 The following resources and methods are defined:
 
